@@ -1,10 +1,10 @@
-﻿using eToroTestTask.Elements;
-using eToroTestTask.Logging;
+﻿using ProtractorTests.Elements;
+using ProtractorTests.Logging;
 using OpenQA.Selenium;
 using Protractor;
 using System.Collections.Generic;
 
-namespace eToroTestTask.Pages
+namespace ProtractorTests.Pages
 {
     public class TrendsExplorePage : BasePage
     {

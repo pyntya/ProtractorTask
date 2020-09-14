@@ -2,7 +2,7 @@
 using log4net.Config;
 using OpenQA.Selenium;
 
-namespace eToroTestTask.Logging
+namespace ProtractorTests.Logging
 {
     public class Logger
     {

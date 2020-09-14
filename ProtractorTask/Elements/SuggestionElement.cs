@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using Protractor;
 
-namespace eToroTestTask.Elements
+namespace ProtractorTests.Elements
 {
     public class SuggestionElement : NgWebElement
     {

@@ -1,9 +1,9 @@
-﻿using eToroTestTask.Pages;
+﻿using ProtractorTests.Pages;
 using Protractor;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace eToroTestTask.Contexts
+namespace ProtractorTests.Contexts
 {
     public class TrendsExploreContext : BaseContext<TrendsExplorePage>
     {

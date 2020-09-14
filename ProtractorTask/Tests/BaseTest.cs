@@ -1,18 +1,20 @@
-﻿using eToroTestTask.Helpers;
-using eToroTestTask.Logging;
+﻿using ProtractorTests.Helpers;
+using ProtractorTests.Logging;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Protractor;
 using System;
+using ProtractorTests.Contexts;
 
-namespace eToroTestTask.Tests
+namespace ProtractorTests.Tests
 {
     public abstract class BaseTest<TWebDriver> where TWebDriver : IWebDriver, new()
     {
         protected IWebDriver driver;
         protected NgWebDriver ngWebDriver;
         protected string BaseUrl => ConfigurationHelper.BaseUrl;
+        protected ContextFactory ContextFactory { get; } = new ContextFactory();
 
         [OneTimeSetUp]
         public void SetUp()

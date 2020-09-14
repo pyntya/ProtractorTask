@@ -3,7 +3,7 @@ using Protractor;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace eToroTestTask.Elements
+namespace ProtractorTests.Elements
 {
     public class RelatedQueriesWidget : NgWebElement
     {

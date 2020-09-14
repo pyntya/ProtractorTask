@@ -1,6 +1,6 @@
 ﻿using Protractor;
 
-namespace eToroTestTask.Pages
+namespace ProtractorTests.Pages
 {
     public abstract class BasePage
     {

@@ -1,10 +1,10 @@
-﻿using eToroTestTask.Pages;
+﻿using ProtractorTests.Pages;
 using Protractor;
 using System;
 
-namespace eToroTestTask.Contexts
+namespace ProtractorTests.Contexts
 {
-    public class BaseContext <T> where T : BasePage
+    public abstract class BaseContext<T> where T : BasePage
     {
         protected T Page;
 

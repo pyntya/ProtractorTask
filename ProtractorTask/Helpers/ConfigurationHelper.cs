@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace eToroTestTask.Helpers
+namespace ProtractorTests.Helpers
 {
     public static class ConfigurationHelper
     {

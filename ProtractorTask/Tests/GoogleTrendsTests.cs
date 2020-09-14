@@ -1,5 +1,5 @@
-﻿using eToroTestTask.Contexts;
-using eToroTestTask.Tests;
+﻿using ProtractorTests.Contexts;
+using ProtractorTests.Tests;
 using FluentAssertions;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -7,7 +7,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using System.Linq;
 
-namespace eToroTestTask
+namespace ProtractorTests
 {
     [TestFixture(typeof(FirefoxDriver))]
     [TestFixture(typeof(ChromeDriver))]
@@ -20,12 +20,13 @@ namespace eToroTestTask
         {
             ngWebDriver.Url = BaseUrl;
 
-            var subRegions = new TrendsHomePageContext(ngWebDriver)
+            var subRegions = ContextFactory.TrendsHomePageContext(ngWebDriver)
                 .SearchFor(searchParameter)
                 .ClickOnSearchTermSuggestion()
                 .SelectCountry(country)
                 .VerifyIfSubRegionIsPresentInList();
-            var subQueriesCount = new TrendsExploreContext(ngWebDriver).ClickOnSubRegion(subRegion)
+            var subQueriesCount = ContextFactory.TrendsExploreContext(ngWebDriver)
+                .ClickOnSubRegion(subRegion)
                 .GetSubQueriesCount();
 
             subRegions.Any(x => x.Contains(subRegion)).Should().BeTrue($"{subRegion} subregion should be present in Subregions list");

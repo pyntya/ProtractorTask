@@ -1,11 +1,11 @@
-﻿using eToroTestTask.Elements;
+﻿using ProtractorTests.Elements;
 using OpenQA.Selenium;
 using Protractor;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace eToroTestTask.Pages
+namespace ProtractorTests.Pages
 {
     public class TrendsHomePage : BasePage
     {
