@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\BaseContext.cs" />
-    <Compile Include="Contexts\Contexts.cs" />
+    <Compile Include="Contexts\ContextFactory.cs" />
     <Compile Include="Contexts\TrendsExploreContext.cs" />
     <Compile Include="Contexts\TrendsHomePageContext.cs" />
     <Compile Include="Elements\RelatedQueriesWidget.cs" />

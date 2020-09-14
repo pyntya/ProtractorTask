@@ -20,12 +20,12 @@ namespace ProtractorTests
         {
             ngWebDriver.Url = BaseUrl;
 
-            var subRegions = ContextFactory.TrendsHomePageContext(ngWebDriver)
+            var subRegions = ContextFactory.Create<TrendsHomePageContext>(ngWebDriver)
                 .SearchFor(searchParameter)
                 .ClickOnSearchTermSuggestion()
                 .SelectCountry(country)
                 .VerifyIfSubRegionIsPresentInList();
-            var subQueriesCount = ContextFactory.TrendsExploreContext(ngWebDriver)
+            var subQueriesCount = ContextFactory.Create<TrendsExploreContext>(ngWebDriver)
                 .ClickOnSubRegion(subRegion)
                 .GetSubQueriesCount();
 
